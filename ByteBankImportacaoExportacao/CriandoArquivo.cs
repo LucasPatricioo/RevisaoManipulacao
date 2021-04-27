@@ -23,5 +23,14 @@ namespace ByteBankImportacaoExportacao
                 fluxoDeDados.Write(conversao, 0, conversao.Length);
             }
         }
+        static void CriarArquivoStream() {
+            string caminhoDoArquivo = "contasExportadas.csv";
+
+            using(FileStream fluxoDeArquivo = new FileStream(caminhoDoArquivo, FileMode.Create))
+            using(StreamWriter escritor = new StreamWriter(fluxoDeArquivo, Encoding.UTF8))
+            {
+                escritor.Write("242,442435,850.00,Lucas Patricio");
+            }
+        }
     }
 }
