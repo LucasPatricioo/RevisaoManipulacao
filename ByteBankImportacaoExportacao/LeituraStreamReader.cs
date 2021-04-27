@@ -12,6 +12,8 @@ namespace ByteBankImportacaoExportacao
     {
         static void Leitor()
         {
+            string localArquivo = "contas.txt";
+         
             using (var fluxoDeArquivos = new FileStream(localArquivo, FileMode.Open))
             using (var leitor = new StreamReader(fluxoDeArquivos))
             {

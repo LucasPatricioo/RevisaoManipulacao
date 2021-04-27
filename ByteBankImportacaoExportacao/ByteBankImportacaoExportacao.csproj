@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CriandoArquivo.cs" />
+    <Compile Include="LeituraStreamReader.cs" />
     <Compile Include="LidandoComFileStream.cs" />
     <Compile Include="Modelos\Cliente.cs" />
     <Compile Include="Modelos\ContaCorrente.cs" />
